@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <title>Sass</title>
+</head>
+<body>
+  <header class="header">
+    <nav class="header__navbar container df">
+       <div class="header__logo">
+        <a href="./index.html"><img src="./images/Logo (1).svg" alt=""></a>
+       </div>
+       <ul class="header__list df">
+         <li class="header__item">
+          <a href="#">Home</a>
+         </li>
+         <li class="header__item">
+          <a href="#">About</a>
+         </li>
+         <li class="header__item">
+          <a href="#">Services</a>
+         </li>
+         <li class="header__item">
+          <a href="#">Contact</a>
+         </li>
+       </ul>
+       <div>
+        <button class="open-modal main__btn">login</button>
+       </div>
+       <button class="header__hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+       </button>
+    </nav>
+  </header>
+
+  <main class="container">
+      <div class="modal" style="display: none;">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2 class="modal-content__title">Login / Register</h2>
+          <form class="container">
+            <label for="username">Username</label>
+            <input type="text" placeholder="Enter Username" name="username" required>
+      
+            <label for="password">Password</label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+      
+            <button type="button" class="login-button">Login</button>
+          </form>
+        </div>
+      </div>
+
+  </main>
+
+  <script src="./js/modal.js"></script>
+  <script src="./js/admin.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
