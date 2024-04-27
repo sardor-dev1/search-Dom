@@ -19,9 +19,12 @@ button {
 }
 
 .container {
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
   max-width: 1440px;
+  @media (max-width:550px) {
+    width: 90%;
+  }
 }
 
 .df {
@@ -30,5 +33,20 @@ button {
 }
 
 main {
-  padding-top: 200px;
+  padding-top: 100px;
 }
+
+.main__btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #46A358;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  transition: .2s;
+  &:hover {
+    background-color: #2f793e;
+  }
+}
+

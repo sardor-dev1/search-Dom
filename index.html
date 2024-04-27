@@ -1,63 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.min.css">
-  <title>Sass</title>
+  <title>Javascript Dom</title>
 </head>
+
 <body>
   <header class="header">
     <nav class="header__navbar container df">
-       <div class="header__logo">
+      <div class="header__logo">
         <a href="./index.html"><img src="./images/Logo (1).svg" alt=""></a>
-       </div>
-       <ul class="header__list df">
-         <li class="header__item">
+      </div>
+      <ul class="header__list df">
+        <li class="header__item">
           <a href="#">Home</a>
-         </li>
-         <li class="header__item">
+        </li>
+        <li class="header__item">
           <a href="#">About</a>
-         </li>
-         <li class="header__item">
+        </li>
+        <li class="header__item">
           <a href="#">Services</a>
-         </li>
-         <li class="header__item">
+        </li>
+        <li class="header__item">
           <a href="#">Contact</a>
-         </li>
-       </ul>
-       <div>
-        <button class="open-modal main__btn">login</button>
-       </div>
-       <button class="header__hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-       </button>
+        </li>
+      </ul>
+      <div class="header__btn" style="display: flex; align-items: center; gap: 20px;">
+        <button class="open-modal main__btn login__btn">Log in</button>
+        <button class="header__hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </nav>
   </header>
 
   <main class="container">
-      <div class="modal" style="display: none;">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <h2 class="modal-content__title">Login / Register</h2>
-          <form class="container">
-            <label for="username">Username</label>
-            <input type="text" placeholder="Enter Username" name="username" required>
-      
-            <label for="password">Password</label>
-            <input type="password" placeholder="Enter Password" name="password" required>
-      
-            <button type="button" class="login-button">Login</button>
+    <section class="product__cards">
+    </section>
+    <section class="container">
+      <div class="form__card">
+        <div class="form__card__info">
+          <button type="submit" class="login__btn modal__btn">Login</button>
+          <p class="modal__slash">/</p>
+          <button type="submit" class="register__btn modal__btn">Register</button>
+        </div>
+        <div class="form__card__login" style="display: block;">
+          <form class="formInp" action="">
+            <input required value="atuny0" class="username" type="text" />
+            <input required value="9uQFF1Lh" class="password" type="password" />
+            <div class="form__btns">
+              <button type="submit" class="form__btn main__btn">Log in</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="form__card__register" style="display: none;">
+          <form class="formInp" action="">
+            <input placeholder="Username" class="username" type="text" />
+            <input placeholder="Enter your email address" class="password" type="password" />
+            <input placeholder="password" class="username" type="text" />
+            <input placeholder="Confirm password" class="password" type="password" />
+            <button class="formBtn main__btn">Register</button>
           </form>
         </div>
       </div>
-
+    </section>
+    <button class="seeMoreCard main__btn">See More</button>
   </main>
 
-  <script src="./js/modal.js"></script>
-  <script src="./js/admin.js"></script>
-  <script src="./js/main.js"></script>
+  <script type="module" src="./js/modal.js"></script>
+  <script type="module" src="./js/main.js"></script>
+  <script type="module" src="./js/products.js"></script>
 </body>
+
 </html>

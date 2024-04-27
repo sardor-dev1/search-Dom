@@ -1,12 +1,12 @@
-const loginBtn = document.querySelector(".loginBtn");
+let loginBtn = document.querySelector(".login_btn");
 let isLogin = localStorage.getItem("x-auth-token");
 
-function checkProducts() {
+function checkProduct() {
   if (!isLogin) {
-    window.location.replace("../index.html");
+    // window.location.replace("../index.html");
   }
 }
-checkroducts();
+checkProduct();
 
 loginBtn.addEventListener("click", () => {
   localStorage.clear();
