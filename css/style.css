@@ -60,6 +60,7 @@ main {
   width: 100%;
   background: white;
   color: black;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .header .header__navbar {
   justify-content: space-between;
@@ -315,12 +316,17 @@ label {
 }
 .product__card__info__text {
   font-size: 16px;
+  padding: 6px 0;
   font-weight: 500;
 }
 
 .seeMoreCard {
   display: block;
-  margin: 20px auto;
+  margin: 25px auto;
+  background-color: blue;
+}
+.seeMoreCard:hover {
+  background-color: rgb(14, 14, 157);
 }
 
 .product__info {
@@ -346,4 +352,61 @@ label {
   font-size: 16px;
   font-weight: 500;
   padding-bottom: 8px;
+}
+
+.footer__top {
+  background: rgba(70, 163, 88, 0.1019607843);
+}
+.footer__top__wrap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+}
+.footer__top__item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+@media (max-width: 1200px) {
+  .footer__top__wrap {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 20px;
+  }
+}
+@media (max-width: 650px) {
+  .footer__top__wrap {
+    grid-template-columns: 1fr;
+  }
+}
+
+footer {
+  background-color: #FBFBFB;
+}
+
+.footer__bottom {
+  padding: 25px 0;
+  display: grid;
+  align-items: baseline;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer__list__item {
+  font-size: 14px;
+  font-weight: 400;
+}
+.footer__list__item:hover {
+  cursor: pointer;
+}
+
+.footer__title {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 20px 0 12px;
 }

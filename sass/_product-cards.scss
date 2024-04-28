@@ -38,6 +38,7 @@
         }
         &__text {
             font-size: 16px;
+            padding: 6px 0;
             font-weight: 500;
         }
     }
@@ -45,5 +46,9 @@
 
 .seeMoreCard {
     display: block;
-    margin: 20px auto;
+    margin: 25px auto;
+    background-color: blue;
+    &:hover {
+        background-color: rgb(14, 14, 157);
+    }
 }
