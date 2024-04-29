@@ -1,9 +1,6 @@
-@import "./fonts";
-@import "./veriable";
-@import "./reset";
-@import "./header";
-@import "./modal";
-@import "./admin";
-@import "./product-cards";
-@import "./products";
-@import "./foter";
+@import "./base/reset";
+@import "./layout/header";
+@import "./pages/products";
+@import "./pages/produc";
+@import "./pages/loading";
+@import "./layout/footer";
